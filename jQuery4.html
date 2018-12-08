@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="jQuery4.css"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+      <title>Weather App</title>
+</head>
+<body>
+  <div class="day" id="today">
+    <button class="close btn-square">X</button>
+    <h1 onclick="$('#temperature_today').html('30C')">Today</h1>
+    <i class="fa fa-sun-o fa-4x" aria-hidden="true"></i>
+    <div class="temperature"  id="temperature_today"></div>
+  </div>
+  <div class="day" id="tomorrow">
+ <button class="close btn-square">X</button>
+    	<h1 onclick="$('#temperature_tomorrow').html('28C')">Tomorrow</h1>
+    	<i class="fa fa-sun-o fa-4x" aria-hidden="true"></i>
+      	<div class="temperature" id="temperature_tomorrow"></div>
+    </div>
+  </body>
+</html>
