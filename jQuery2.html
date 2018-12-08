@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="jQuery2.css"/>
+    <link rel="stylesheet" type="text/css" href="https://tumwlfe-mooc.srv.mwn.de/mooc-lib/weatherApp.css"/>
+    <script src="js/jquery-3.3.1.js"></script>
+  </head>
+<body>
+    <div id="mainview-content">
+    <div id="icon">
+      <img id="iconimage" src="img/partly-cloudy-day.png" alt="weather"
+       onclick="$('#temperature').html('30° C')";    >
+        </div>
+      <div id="summary" class="text-center">
+        Partly cloudy throughout the day
+      </div>
+      <div id="temperature" class="text-center" onclick="$('#temperature').css('background-color', '#FFA812');">15° C</div>
+      <!-- jQuery method for showing the details view --> 
+      <button class="btn-wide detail-control" id="details-button"
+       onclick="$('#detailsview').show();">
+        Show Details
+      </button>
+    </div>
+    <div id="detailsview" class="text-center">
+      <p>Humidity: 78%</p>
+      <p>Min temperature: 8° C</p>
+       <p>Max temperature: 22° C</p>
+       <p>Windspeed: 5 km/h</p>
+       <p>Chance of rain: 45%</p>
+       <!-- jQuery method for hiding the details view --> 
+       <button id="close-details-button" class="btn-wide detail-control" onclick="$('#detailsview').hide()">Close Details</button>
+    </div>
+</body></html>

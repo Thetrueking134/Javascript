@@ -1,0 +1,15 @@
+#detailsview {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+ 	top: 0px;
+    left: 0px;
+	background-color: #45B29D;
+}
+
+.detail-control {
+  	/* Push buttons to the bottom */
+ 	position: absolute;
+  	bottom: 0;
+}
