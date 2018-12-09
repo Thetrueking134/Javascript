@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--Every HTML script must start with this.-->
+<html>
+<!--This must be written first of all,declares that the content will be interpreted by browser as HTML, and this tag is closed at the very end of the coding-->
+<head>
+<title>Title of the document</title>
+</head>
+<!--It sets the name of the tab in the browser-->
+<body>
+<!--This starts the body part of the script,and as html tag,it closes at the very end of the coding-->
+<p>Content</p>
+<h1>Content</h1>
+<h2>Content</h2>
+<!--This is how we declare paragraphs and headings. Depending on the number of the heading, the size of the font changes.-->
+<p>Hi,<strong>Everybody</strong></p>
+<!--1)<strong> makes the content within it something like bold and 2)the tag inside the tag is called nesting.-->
+</body>
+</html>
+
+
+
+<head>
+        <title>Title of the document</title>
+          <style>
+          p {
+          text-align:center;background-color:lightskyblue;color:rgb(200,200,200);font-family:Arial, Helvetica, sans-serif;font-size:smaller;
+          }
+          h1 {
+          text-transform: capitalize; font-size:200%;font-size:2em;
+          }
+          </style>
+          <!--This is internal CSS.As it is seen, it is written in "head" part of the coding.We set the name of the tag,
+          "p",it can be any,like strong,h,*(for all),and then in the brackets set the properties and values.The color can 
+          be set via 3 ways:1)name of the color 2)rgb and 3)#007FFF.In font-family part,we set different fonts by decreasing
+          priority, sans-serif is the default of Windows.If the name of the font consists of 2 or more words, the name must be
+          written in quotes, like "Arial Bold". For font-size we can use different values, such as x-small,xx-large,or larger(
+          it is relative to the surrounding parent element). For text-transform there are several alternatives such as uppercase,
+          capitalize,none and etc.Font-size can also be set via percentage and em.200%=2em,100%=1em.-->
+</head>
+
+
+
+<div>Imran</div>
+<!--This is a block element, it forces a line break(there will be a line break after "Imran") and is used as a container of other HTML elements-->
+<span>Imran</span>
+<span>Majidli</span>
+<!--This is an inline element, it does not force a line break. Imran and Majidli will appera in one line.-->
+<div><!--This is shown as an example-->
+  <strong></strong>
+  <span></span>
+</div>
+<!--the style of span and div is set as usual, i.e like in h1,p and etc.-->
+
+
+
+<ol>
+<li>Monday</li>
+<li>Tuesday</li>
+<li>Wednesday</li>
+</ol>
+<!--Ordered list,we will see numbers in the very left of the lines-->
+<ul>
+<li>Monday</li>
+<li>Tuesday</li>
+<li>Wednesday</li>
+</ul>
+<!--Unordered list,there will be bold dots in the very left.-->
+<style>
+ul{
+list-style-type: square ;
+}
+</style>
+<!--We can set the symbols of the items in the list instead of dots and numbers in unordered and ordered lists accordingly-->
+
+
+
+<h1 style="font-size:large; color: red">Life is good.</h1>
+<!--This is called inline CSS. This is how we can define style directly inside HTML tags.As it can be seen,we open the HTML 
+tag and without closing it we write style,properties and their values, and only then close the opening tag.-->
+
+
+
+<img src="url" alt="Oops">
+<!--This is a general view of image inserting in the HTML script.Alt part is used to give a text in case the url does not open.-->
+<img src="https://www.wikipedia.de/img/logo.png" alt="Here should be the wikipedia image" style="width:200px;height:200px">
+<!--It must be remembered that after the quotes, alt must be spaced out from the quotes, and the same with style.Btw,we can set
+the dimensions of the image via  style here as well.-->
+
+
+
+<video style="width: 200px; height: 300px;" controls; autoplay> 
+<!--"Controls" attribute adds basic controls such as play/pause and volume to the video.The "autoplay" starts the video as soon
+as the website is loaded.-->
+<source src="url" type="video/mp4">
+<source src="url" type="video/mp4">
+Video cannot be loaded. <!--This part is like Alt section of image tag-->                         
+</video> 
+
+
+
+<a href="https://www.tum.de/en/homepage/" target="_blank">Link to tum.de</a>
+<!--"a" stands for anchor.It is used to reference a different website,i.e it is a hyperlink.In target part we write _blank or _self,
+the first is to open the link in another tab, the second-in the same window.The text after target zone is shown on the page as button
+to click and go to the url.Url used from internet are external paths.Besides them we have also relative paths which link to content
+on private computers.If the file is in the same folder as our HTML file, we just copy and paste the link to the file,e.g 
+"C:\Users\Imran\Desktop\HTML", and important, do not forget change slashs to forward ones "C:/Users/Imran/Desktop/HTML".If the file is
+located in one directory upper, we add ../ "../C:/Users/Imran/Desktop/HTML", if two directories upper - ../../-->
+
+
+
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+<!--This tag,as its name implies,adds the button.Onclick part sets the text which appears when we click the button,this part is 
+not mandatory.Inside the button tag we have the text which is written on the button-->
+
+
+
+<p><strong>22&deg;C</strong></p>
+<!--This is how we code the Celcius degree scale.-->
+
+
+
+<head>
+  <title>Detailsview: WeatherApp for MOOC</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <!--In the head section of the script, we can link our html code to the external css code.Everything that we were writing
+  in style seciton in the head section, we copy and apste there,so simple.-->
+</head>
+
+
+<head>
+  <style>
+p {
+  text-transform: uppercase;
+}
+div p {
+  color: #0000FF;
+}</style>
+</head>
+<!--It is written in the style part before <body>-->
+<div>
+  <p>Paragraph inside a division.</p>
+  </div>
+  <p>Paragraph outside a division.</p>
+<!--Nesting of CSS elements.Paragraph in div will have #0000FF color, while both paragraphs will have uppercase text.If div has
+many different child elements, when we set color via div * in style section, all child elements of div will change its color-->
+
+<style>
+p, span {
+  color:red;
+}
+</style>
+<p>A paragraph</p>
+<strong>Bold text</strong>
+<span>Normal text</span>
+<!--We can use commas to change the properties of 2 or more selectors(p,span) with one tag.-->
+
+
+
+
+header span {
+background-color: rgb(44, 114, 101);
+font-size: initial;
+}
+<!--Sets the properties of the child element(span) of the parent element(header).In font-size we wrote initial, it means that it
+does not copy the font-size from the parent element. If we would like to copy the value of the parent element, we could write inherit or just do not write 
+anything.-->
+
+
+
+#Card {
+  color:blue;
+}
+<div id="Card"></div>
+<!--This is how we set the style of IDs-->
+
+.stylish {
+  color:red;
+}
+<div class="stylish"></div>
+<!--This is how we set the style of Classes-->
+
+#Card.stylish {
+  color:red;
+}
+<div id="Card" class="stylish"></div>
+<!--This is how we set the style of nested element-->
+
+
+
+#element1 {                                
+  background-color: rgb(169, 178, 157);
+   padding: 45px;
+   border: 1px solid black;
+   margin: 55px;                      
+ }
+ <!--This is how in style section we can set the properties of 4 parts of every HTML element(content,padding,border,margin)-->
+ selector {
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  }
+  <!--This is how we can set different values for the different sides-->
+  selector {
+    padding: 0px 5px 5px 10px;
+    }
+<!--In this case each value represents one side. The order is **top**, **right**, **bottom** , and **left**.This styling can be
+used with other parts of HTML elements as well(margins and etc).-->
+
+
+
+#inner-div {
+  background-color: rgb(69, 178, 157);
+  width: 50%;
+  display: inline;
+}
+span {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  width: 100px;
+  display: block;
+}
+<!--display:inline makes the element an inline element,which leads to an inline behavior,i.e taking up only as much space as
+necessary and does not start in a new line.And the height and width cannot be set to these elements anymore.display:block makes the element
+a block element.Display:inline-block do not force a line break but at the same time respond to CSS properties height and width.-->
+
