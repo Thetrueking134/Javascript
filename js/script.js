@@ -1,5 +1,3 @@
-console.log('My app is alive!!!')
-
 function First(){
 Channel('Yummy','challenge-6-star');
 }
@@ -25,8 +23,5 @@ function Channel(Name,image){
 $('#bar').html('#' + Name + ' by <span id="ID"><a href="https://map.what3words.com/upgrading.never.helps" target="_blank"><small style="color:white">upgrading.never.helps</small></span>');
 $('#Image').attr('src','img/' + image + '.png');
 }
-
-
-console.log(Channel)
 
 
