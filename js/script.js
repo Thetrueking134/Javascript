@@ -5,20 +5,20 @@ Channel('Yummy','challenge-6-star');
 }
 
 function Second(){
-	Channel('SevenContinents','challenge-6-star-o');
-	}
+Channel('SevenContinents','challenge-6-star-o');
+}
 
-	function Third(){
-		Channel('KillerApp','challenge-6-star');
-		}
+function Third(){
+Channel('KillerApp','challenge-6-star');
+}
 
-		function Fourth(){
-			Channel('FirstPersonOnMars','challenge-6-star-o');
-			}
+function Fourth(){
+Channel('FirstPersonOnMars','challenge-6-star-o');
+}
 
-			function Fifth(){
-				Channel('Octoberfest','challenge-6-star');
-				}
+function Fifth(){
+Channel('Octoberfest','challenge-6-star');
+}
 
 
 function Channel(Name,image){
