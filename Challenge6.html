@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>chatter|app</title>
-        <link rel="stylesheet" type="text/css" href="Challenge6.css"/>
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="js/script.js"></script>
-       
-    </head>
-    <body>
+
+<head>
+    <title>chatter|app</title>
+    <link rel="stylesheet" type="text/css" href="Challenge6.css" />
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
     <div style="background-color:white">
-        <h1> <img src="https://pbs.twimg.com/profile_images/740656861758685184/sje-JQyC_400x400.jpg" alt="Oops.." style="height:56px;padding:0px;margin:0px" > chatter|app</h1>
+        <h1> <img src="https://pbs.twimg.com/profile_images/740656861758685184/sje-JQyC_400x400.jpg" alt="Oops.." style="height:56px;padding:0px;margin:0px">
+            chatter|app</h1>
         <ol>
-        <li onclick="First()">#Yummy <span><img src="img/challenge-6-star.png"></span></li>
-        <li onclick="Second()">#SevenContinents <span><img src="img/challenge-6-star-o.png"></span></li>
-        <li onclick="Third()">#KillerApp <span><img src="img/challenge-6-star.png"></span></li>
-        <li onclick="Fourth()">#FirstPersonOnMars <span><img src="img/challenge-6-star-o.png"></span></li>
-        <li onclick="Fifth()">#Octoberfest <span><img src="img/challenge-6-star.png"></span></li>
+            <li onclick="First()">#Yummy <span><img src="img/challenge-6-star.png"></span></li>
+            <li onclick="Second()">#SevenContinents <span><img src="img/challenge-6-star-o.png"></span></li>
+            <li onclick="Third()">#KillerApp <span><img src="img/challenge-6-star.png"></span></li>
+            <li onclick="Fourth()">#FirstPersonOnMars <span><img src="img/challenge-6-star-o.png"></span></li>
+            <li onclick="Fifth()">#Octoberfest <span><img src="img/challenge-6-star.png"></span></li>
         </ol>
-        <div style="background-color: white "><button type="button" style="background-color: lightgray">New</button> <button type="button" style="background-color: lightgray">Trending</button> <button type="button" style="background-color: lightgray">Favorites</button>
+        <div style="background-color: white "><button type="button" style="background-color: lightgray">New</button>
+            <button type="button" style="background-color: lightgray">Trending</button> <button type="button" style="background-color: lightgray">Favorites</button>
         </div>
     </div>
-        <hr>
-        <h1 id="bar">#SevenContinents by <small>cone.bike.layover</small><img id="Image" src="img/challenge-6-star.png" style="position:absolute;right:16px"></h1>
-        <h3><a href="https://map.what3words.com/cone.bike.layover" target="_blank"><strong style="color:black">cone.bike.layover</strong></a> Sat,Nov 24th,17:36 14 min. left</h3>
-        <div style="width:80%"><p>Hello to everyone!</p></div>
-        <button type="button" style="background-color: yellowgreen">+5 min.</button>
-        <h3><a href="https://map.what3words.com/removed.await.frogs" target="_blank"><strong style="color:black">removed.await.frogs</strong></a> Sat,Nov 24th,17:45 7 min. left</h3>
-        <div style="width:80%"><p>Good evening.</p></div>
-        <button type="button" style="background-color: yellowgreen">+5 min.</button>
-        <h3><a href="https://map.what3words.com/dishing.bottom.instance" target="_blank"><strong style="color:black">dishing.bottom.instance</strong></a> Sat,Nov 24th,17:46 15 min. left</h3>
-        <div style="width:80%"><p>What's uppp,dude?</p></div>
-        <button type="button" style="background-color: yellowgreen">+5 min.</button>
-        <!--Generally,the new things were:buttons,text formatting styles,<hr>(horizontal bar)-->
-        <p></p>
-    </body>
+    <hr>
+    <h1>
+        <span id="bar">#SevenContinents by <small>cone.bike.layover</small></span>
+        <img id="Image" src="img/challenge-6-star.png" style="position:absolute;right:16px" onclick="Return()">
+    </h1>
+    <h3><a href="https://map.what3words.com/cone.bike.layover" target="_blank"><strong style="color:black">cone.bike.layover</strong></a>
+        Sat,Nov 24th,17:36 14 min. left</h3>
+    <div style="width:80%">
+        <p>Hello to everyone!</p>
+    </div>
+    <button type="button" style="background-color: yellowgreen">+5 min.</button>
+    <h3><a href="https://map.what3words.com/removed.await.frogs" target="_blank"><strong style="color:black">removed.await.frogs</strong></a>
+        Sat,Nov 24th,17:45 7 min. left</h3>
+    <div style="width:80%">
+        <p>Good evening.</p>
+    </div>
+    <button type="button" style="background-color: yellowgreen">+5 min.</button>
+    <h3><a href="https://map.what3words.com/dishing.bottom.instance" target="_blank"><strong style="color:black">dishing.bottom.instance</strong></a>
+        Sat,Nov 24th,17:46 15 min. left</h3>
+    <div style="width:80%">
+        <p>What's uppp,dude?</p>
+    </div>
+    <button type="button" style="background-color: yellowgreen">+5 min.</button>
+    <!--Generally,the new things were:buttons,text formatting styles,<hr>(horizontal bar)-->
+    <p></p>
+</body>
+
 </html>
