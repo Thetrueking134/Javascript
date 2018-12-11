@@ -1,38 +1,40 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>Weather App</title>
-    <link rel="stylesheet" type="text/css" href="jQuery5.css"/>
-    <script src="js/jquery-3.3.1.js"></script>
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="jQuery5.css" />
+  <script src="js/jquery-3.3.1.js"></script>
   <script src="js/jQuery5.js"></script>
 </head>
 
 <!-- Sidebar Menu  -->
-<nav id="menu" >
-    <!-- Close button for sidebar -->
-     <button id="close-sidebar" class="btn-square pull-right sidebar-control" onclick="hideSidebar()">
-        <i class="fa fa-close"></i>
-     </button>
-     <h2><i class="fa fa-globe"></i> Cities</h2>
-       <ul id="citylist" class="list-group">
-        <li>Munich</li>
-        </ul>
-  </nav>
-  
-  <div style="text-align: center">
+<nav id="menu">
+  <!-- Close button for sidebar -->
+  <button id="close-sidebar" class="btn-square pull-right sidebar-control" onclick="hideSidebar()">
+    <i class="fa fa-close"></i>
+  </button>
+  <h2><i class="fa fa-globe"></i> Cities</h2>
+  <ul id="citylist" class="list-group">
+    <li>Munich</li>
+  </ul>
+</nav>
+
+<div style="text-align: center">
   <!-- MainView Header Start -->
-  <header id="mainview-header" class="header topbar text-white" >
-  <!-- Menu button for opening the sidebar -->  
+  <header id="mainview-header" class="header topbar text-white">
+    <!-- Menu button for opening the sidebar -->
     <button id="open-sidebar" class="btn-square pull-left sidebar-control" onclick="showSidebar()">
-       <i class="fa fa-bars"></i>
+      <i class="fa fa-bars"></i>
     </button>
     <h1 id="city" class="pull-left text-center city">Berlin</h1>
     <div class="clear"></div>
   </header>
   <div id="icon">
-      <img id="iconimage" src="img/rain.png" alt="weather">
+    <img id="iconimage" src="img/rain.png" alt="weather">
   </div>
   <div id="summary" class="text-center">Rain in the afternoon</div>
   <div id="temperature" class="text-center">11° C</div>
 </div>
-  </html>
+
+</html>
